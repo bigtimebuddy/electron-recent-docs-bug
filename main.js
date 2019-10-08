@@ -30,6 +30,9 @@ function createWindow () {
     mainWindow = null
   })
 
+  // Menu item should show-up
+  app.addRecentDocument(path.join(__dirname, 'index.html'))
+
   const menu = Menu.buildFromTemplate([
     {
       label: 'About',
